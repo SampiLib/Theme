@@ -1,4 +1,4 @@
-import { Value, ValueLimiter, ValueType } from "./value";
+import { Value, ValueLimiter, ValueType } from "./value.js";
 
 
 export class ValueAsync extends Value {

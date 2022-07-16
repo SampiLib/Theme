@@ -1,4 +1,4 @@
-import { Value } from "./value";
+import { Value } from "./value.js";
 
 /**Defines the base mapper function type
  * @typedef {(value:*)=>*} MapperFunction*/

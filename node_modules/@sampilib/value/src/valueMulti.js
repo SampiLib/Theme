@@ -1,4 +1,4 @@
-import { Value } from "./value";
+import { Value } from "./value.js";
 
 /**Performs an operation on multiple values */
 export class ValueMulti extends Value {

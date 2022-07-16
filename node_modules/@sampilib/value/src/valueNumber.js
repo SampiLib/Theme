@@ -1,4 +1,4 @@
-import { ValueMulti } from "./valueMulti";
+import { ValueMulti } from "./valueMulti.js";
 
 /**Sums up values from other Values only numbers*/
 export class ValueSum extends ValueMulti {

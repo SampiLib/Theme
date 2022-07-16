@@ -1,4 +1,4 @@
-import { Value, ValueType, ValueLimiter } from "./value";
+import { Value, ValueType, ValueLimiter } from "./value.js";
 
 /**The function type for array value listeners
  * the index of addition or deletion is the first argument

@@ -1,5 +1,5 @@
-import { Value, ValueListener } from "./value";
-import { MapperFunction } from "./valueProxy";
+import { Value, ValueListener } from "./value.js";
+import { MapperFunction } from "./valueProxy.js";
 
 export class ValueObjectKeyProxy extends Value {
     /**
