@@ -1,22 +1,42 @@
 {
-    "name": "@sampilib/ui-theme",
-    "version": "0.1.0",
-    "description": "Theme engine used to have multiple color and other css controlable presets for entire application",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/SampiLib/Theme.git"
-    },
-    "author": "chocolateandmilkwin",
-    "license": "Apache-2.0",
-    "bugs": {
-        "url": "https://github.com/SampiLib/Theme/issues"
-    },
-    "homepage": "https://github.com/SampiLib/Theme#readme",
-    "dependencies": {
-        "@sampilib/value": "^0.1.0"
-    }
+  "name": "@sampilib/ui-theme",
+  "version": "0.1.1",
+  "main": "./dist/umd/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/typings/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "serve": "npm run build & webpack serve",
+    "build": "webpack --config-name=build",
+    "prebuild": "tsc",
+    "prepublishOnly": "npm run test & npm run build"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "=5.5.0",
+    "jest": "=29.3.1",
+    "jest-environment-jsdom": "=29.3.1",
+    "ts-jest": "=29.0.3",
+    "ts-loader": "=9.4.1",
+    "ts-node": "=10.9.1",
+    "typescript": "=4.8.4",
+    "webpack": "=5.75.0",
+    "webpack-cli": "=4.10.0",
+    "webpack-dev-server": "=4.11.1"
+  },
+  "author": "chocolateandmilkwin",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SampiLib/Theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SampiLib/Theme/issues"
+  },
+  "homepage": "https://github.com/SampiLib/Theme#readme",
+  "dependencies": {
+    "@sampilib/value": "^0.4.1"
+  }
 }

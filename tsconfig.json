@@ -1,0 +1,42 @@
+{
+    "files": [
+        "./src/index.ts"
+    ],
+    "include": [
+        "./src/**/*.ts"
+    ],
+    "compilerOptions": {
+        "lib": [
+            "ES6",
+            "DOM"
+        ],
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitAny": true,
+        "module": "es6",
+        "target": "ES2022",
+        "allowJs": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "./dist/esm/",
+        "declaration": true,
+        "declarationDir": "./dist/typings/",
+        "esModuleInterop": true
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "lib": [
+                "ES6"
+            ],
+            "strict": true,
+            "forceConsistentCasingInFileNames": true,
+            "noImplicitAny": true,
+            "module": "CommonJS",
+            "target": "ES2022",
+            "allowJs": true,
+            "moduleResolution": "node",
+            "sourceMap": true,
+            "esModuleInterop": true
+        },
+    }
+}
